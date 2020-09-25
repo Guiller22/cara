@@ -1,0 +1,26 @@
+.head {
+    background: #fc0;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+.face {
+    font-family: 'Courier New', serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -60%) rotate(90deg);
+}
+
+.page {
+    height: 10em;
+    position: relative;
+    height: fill;
+}
