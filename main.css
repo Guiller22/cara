@@ -2,6 +2,7 @@
     background: #fc0;
     height: 100px;
     width: 100px;
+    border-radius: 50%;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -34,3 +35,12 @@
     white-space: pre;
 }
 
+.face:hover {
+    visibility: hidden;
+}
+
+.face:hover:after {
+    visibility: visible;
+    content: "*)  ";
+    white-space: pre; /* needed for white spaces in 'content' to not be ignored. */
+}
