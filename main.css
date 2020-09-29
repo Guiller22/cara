@@ -12,4 +12,32 @@
     position: absolute;
     top: 50%;
     transform: translate(-50%, -60%) rotate(90deg);
+<<<<<<< Updated upstream
+=======
+}
+
+.page {
+    height: 10em;
+    position: relative;
+    height: fill;
+}
+
+.face {
+    visibility: hidden;
+}
+.face:after {
+    visibility: visible;
+    content: ":)  ";
+    white-space: pre;
+}
+
+.face:hover {
+    visibility: hidden;
+}
+
+.face:hover:after {
+    visibility: visible;
+    content: "*)  ";
+    white-space: pre; /* needed for white spaces in 'content' to not be ignored. */
+>>>>>>> Stashed changes
 }
