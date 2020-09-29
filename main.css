@@ -1,11 +1,16 @@
 .head {
     background: #fc0;
     height: 100px;
-    position: relative;
     width: 100px;
     border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
 }
-.face{
+
+.face {
     font-family: 'Courier New', serif;
     font-size: 2.5em;
     font-weight: bold;
@@ -13,4 +18,29 @@
     position: absolute;
     top: 50%;
     transform: translate(-50%, -60%) rotate(90deg);
+}
+
+.page {
+    height: 10em;
+    position: relative;
+    height: fill;
+}
+
+.face {
+    visibility: hidden;
+}
+.face:after {
+    visibility: visible;
+    content: ":)  ";
+    white-space: pre;
+}
+
+.face:hover {
+    visibility: hidden;
+}
+
+.face:hover:after {
+    visibility: visible;
+    content: "*)  ";
+    white-space: pre; /* needed for white spaces in 'content' to not be ignored. */
 }
